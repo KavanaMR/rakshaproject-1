@@ -15,7 +15,7 @@ const routes: Routes = [
   {path:'',component : GetQuoteComponent},
   {path:'admin',component: AdminDashboardComponent},
   {path:'carinsurance', component: CarInsuranceComponent},
-  {path:'Bikeuser', component: BikeInsuranceComponent},
+  {path:'Bikeinsurance', component: BikeInsuranceComponent},
   {path:'login', component: LoginComponent},
   {path:'download', component: DownloadInsuranceComponent},
   {path:'payment', component: PaymentGatewayComponent},
