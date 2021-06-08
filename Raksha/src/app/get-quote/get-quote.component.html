@@ -1,7 +1,5 @@
-
-<div class="container-fluid  " class="bg-image">
- 
-  <div class="row mb-4">
+<div class="container-fluid " >
+ <div class="row mb-4">
       <div class="col-lg-5 mx-auto text-center">
           <h1 class="display-6">GetQuote</h1>
       </div>
@@ -17,35 +15,31 @@
                       </ul>
                   </div> <!-- End -->
 
-<div class="tab-content ">
+                 <div class="tab-content ">
                       <div id="car" class="tab-pane fade show active pt-3">
-                          <form role="form" (ngSubmit)="save()">
+                          <form role="form" onsubmit="save()">
                               <div class="form-group "> <label for="carnumber">
                                       <h6 class="text-gray">Enter your car number</h6>
-                                  </label> <input type="text" name="carnumber" placeholder="eg-MH00112" required class="form-control "> </div>
-                             
-</form>
-</div>
-
-
-
-
-                      <div id="bike" class="tab-pane fade pt-3">
-                          <form role="form" (ngSubmit)="submit()">
-                             
-                          <div class="form-group"> <label for="bikeNumber">
-                                      <h6>Enter your bike number</h6>
+                                  </label> <input type="text" name="carnumber" placeholder="eg-MH00112" requird pattern="[A-Z0[0-9]{4,}" class="form-control ">
+                                 </div>
+                            </form>
+                        </div>
+                        <div id="bike" class="tab-pane fade pt-3">
+                          <form role="form" onsubmit="submit()">
+                              <div class="form-group"> <label for="bikeNumber">
+                                  <h6>Enter your bike number</h6>
                                   </label>
-                              <input type="text" name="bikeNumber" placeholder="eg-MH00112" required class="form-control "> </div>
-                                </form>
-</div>
-</div>
-<div class="form-group">
-                          <p> <button type="submit" class="btn btn-primary ">Submit</button> </p>
-                      </div>
-
-
-</div>
-</div>
-</div>
+                
+                                 <input type="text" name="bikeNumber" placeholder="eg-MH00112"  class="form-control "> 
+                               </div>
+                            </form>
+                        </div>
+                   </div>
+                   <div class="form-group">
+                        <p> <button type="submit" class="btn btn-primary ">Submit</button> </p>
+                    </div>
+             </div>
+         </div>
+      </div>
+   </div>
 </div>
